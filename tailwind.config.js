@@ -17,6 +17,9 @@ module.exports = {
       colors: {
         toto: '#A38467',
       },
+      backgroundColor: {
+        main: '#1D1A54',
+      },
       // backgroundImage: {
       //   'hero-pattern': "url('/img/hero-pattern.svg')",
       //   'footer-texture': "url('/img/footer-texture.png')",

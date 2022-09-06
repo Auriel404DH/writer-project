@@ -1,18 +1,18 @@
 .wrapper {
-  @apply bg-[url('../assets/backPhoto.jpg')]  px-16 min-h-screen border-2 relative flex flex-col;
+  @apply bg-gray-900 text-slate-200  px-12 min-h-screen border-2 relative flex flex-col;
 
   .app {
-    @apply rounded-xl relative flex flex-col flex-1 p-3 my-1 border-slate-700 border-2;
+    @apply rounded-xl relative flex flex-col flex-1 p-3 my-1;
   }
 
   .header {
-    @apply text-2xl flex items-center pb-3 border-b-2 justify-between;
+    @apply text-sm flex items-center pb-3 border-b-2 justify-between;
 
     .nava {
       @apply flex justify-between items-center mr-4;
 
       .link {
-        @apply border-l-2 px-6 py-2;
+        @apply border-l-2 px-6 py-1;
       }
     }
 
@@ -20,7 +20,7 @@
       @apply ml-4;
 
       .logoImg {
-        @apply w-24;
+        @apply w-16;
       }
     }
   }
@@ -31,10 +31,10 @@
 
   footer {
     .footer {
-      @apply flex justify-around border-t-2 py-8 border-gray-500 items-center;
+      @apply flex justify-around border-t-2 pt-2 border-gray-500 items-center;
 
       &__title {
-        @apply font-bold;
+        @apply font-bold border-b-2;
       }
 
       &__column {

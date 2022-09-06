@@ -75,13 +75,13 @@ const MainLayout: React.FC<Imain> = ({ children }) => {
                     <a>VK: </a>
                   </li>
                   <li>
-                    <a>Instagramm: </a>
+                    <a>Inst: </a>
                   </li>
                   <li>
                     <a>TG: </a>
                   </li>
                   <li>
-                    <a>Discord: </a>
+                    <a>Disc: </a>
                   </li>
                 </ul>
               </nav>
