@@ -1,0 +1,19 @@
+.header {
+  @apply text-sm flex items-center pb-3 border-b-2 justify-between;
+
+  .nava {
+    @apply flex justify-between items-center mr-4;
+
+    .link {
+      @apply border-l-2 px-6 py-1;
+    }
+  }
+
+  .logo {
+    @apply ml-4;
+
+    .logoImg {
+      @apply w-16;
+    }
+  }
+}

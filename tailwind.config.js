@@ -9,10 +9,6 @@ module.exports = {
       xl: '1440px',
     },
 
-    fontFamily: {
-      ubuntu: ['Ubuntu'],
-    },
-
     extend: {
       colors: {
         toto: '#A38467',
@@ -20,10 +16,9 @@ module.exports = {
       backgroundColor: {
         main: '#1D1A54',
       },
-      // backgroundImage: {
-      //   'hero-pattern': "url('/img/hero-pattern.svg')",
-      //   'footer-texture': "url('/img/footer-texture.png')",
-      // },
+      fontFamily: {
+        body: ['Josefin+Sans'],
+      },
     },
   },
   plugins: [],
