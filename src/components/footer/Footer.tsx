@@ -1,6 +1,8 @@
 import React from 'react';
+import 'antd/dist/antd.min.css';
 import styles from './footer.module.scss';
 import logoFoot from '../../assets/footerLogo.png';
+import { InstagramOutlined } from '@ant-design/icons';
 
 const Footer: React.FC = () => {
   return (
@@ -25,7 +27,7 @@ const Footer: React.FC = () => {
             </ul>
           </nav>
           <nav className={styles.footer__column}>
-            <p className={styles.footer__title}>Navigation</p>
+            <p className={styles.footer__title}>Navigate</p>
             <ul>
               <li className={styles.footer__link}>
                 <a>Subs</a>
@@ -43,7 +45,10 @@ const Footer: React.FC = () => {
           </nav>
         </div>
         <div className={styles.footer__center}>
-          <img className="w-24" src={logoFoot} />
+          <div className="mx-auto mb-4">
+            <img className="w-24" src={logoFoot} />
+          </div>
+          <div className={styles.footerDown}>Copyright © 2022 V&K Labs Inc. Trademark Policy</div>
         </div>
         <div className={styles.footer__right}>
           <nav className={styles.footer__column}>
@@ -65,7 +70,6 @@ const Footer: React.FC = () => {
           </nav>
         </div>
       </div>
-      <div className={styles.footerDown}>Copyright © 2022 V&K Labs Inc. Trademark Policy</div>
     </footer>
   );
 };

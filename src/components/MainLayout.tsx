@@ -1,7 +1,12 @@
 import React from 'react';
+import 'antd/dist/antd.min.css';
 import styles from './Main.module.scss';
-import Header from './header/Header';
-import Footer from './footer/Footer';
+import HeaderS from './header/Header';
+import FooterS from './footer/Footer';
+import { Layout } from 'antd';
+import SideList from './sideBar/sideBar';
+
+const { Sider } = Layout;
 
 interface Imain {
   children: any;
@@ -10,11 +15,14 @@ interface Imain {
 const MainLayout: React.FC<Imain> = ({ children }) => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.app}>
-        <Header />
+      <HeaderS />
+      <Layout>
+        <Sider>
+          <SideList />
+        </Sider>
         <main className={styles.main}>{children}</main>
-        <Footer />
-      </div>
+      </Layout>
+      <FooterS />
     </div>
   );
 };

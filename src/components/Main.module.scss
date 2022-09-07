@@ -1,11 +1,7 @@
 .wrapper {
-  @apply bg-gray-900 text-slate-200  px-12 min-h-screen border-2 relative flex flex-col font-body text-start;
-
-  .app {
-    @apply rounded-xl relative flex flex-col flex-1 p-3 my-1;
-  }
+  @apply bg-gray-900 text-slate-200 pt-2 min-h-screen border-2 relative flex flex-col font-body text-start;
 
   .main {
-    @apply flex-1;
+    @apply flex-1 bg-slate-800;
   }
 }

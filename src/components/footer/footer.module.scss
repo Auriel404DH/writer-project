@@ -1,9 +1,9 @@
 footer {
   .footer {
-    @apply flex justify-around border-t-2 pt-2 border-gray-500 items-center;
+    @apply flex justify-around border-t-2 py-1 border-gray-500 items-center;
 
     &__title {
-      @apply font-bold border-b-2 mb-3;
+      @apply font-bold border-b-2 mb-1;
     }
 
     &__column {
@@ -15,7 +15,7 @@ footer {
     }
 
     &__center {
-      @apply w-2/6 flex justify-center;
+      @apply w-2/6 flex flex-col;
     }
 
     &__right {
