@@ -1,7 +1,10 @@
 .wrapper {
-  @apply bg-gray-900 text-slate-200 pt-2 min-h-screen border-2 relative flex flex-col font-body text-start;
+  @apply pt-2 min-h-screen relative flex flex-col font-body text-start;
+  background-color: #222327;
+  color: #fff;
 
   .main {
-    @apply flex-1 bg-slate-800;
+    @apply flex-1;
+    background-color: #28292e;
   }
 }

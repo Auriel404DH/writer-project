@@ -10,10 +10,10 @@ const Header: React.FC = () => {
       </div>
       <nav className={styles.nava}>
         <a className={styles.link}>Main</a>
-        <a className={styles.link}>Edit</a>
-        <a className={styles.link}>Subs</a>
-        <a className={styles.link}>Zakls</a>
-        <a className={styles.link}>Workspace</a>
+        <a className={styles.link}>Editor</a>
+        <a className={styles.link}>Subscriptions</a>
+        <a className={styles.link}>Liked</a>
+        <a className={styles.link}>Your account</a>
       </nav>
     </header>
   );

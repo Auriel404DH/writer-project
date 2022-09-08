@@ -1,11 +1,20 @@
 .header {
   @apply text-sm flex items-center pb-2 border-b-2 justify-between;
+  border-color: #e7a007;
 
   .nava {
     @apply flex justify-between items-center mr-4;
 
     .link {
       @apply border-l-2 px-6 py-1;
+      color: #e7a007;
+      opacity: 0.7;
+      font-size: 1.3rem;
+      transition: .2s linear;
+    }
+    
+    .link:hover {
+      opacity: 1;
     }
   }
 

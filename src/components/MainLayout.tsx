@@ -17,9 +17,6 @@ const MainLayout: React.FC<Imain> = ({ children }) => {
     <div className={styles.wrapper}>
       <HeaderS />
       <Layout>
-        <Sider>
-          <SideList />
-        </Sider>
         <main className={styles.main}>{children}</main>
       </Layout>
       <FooterS />

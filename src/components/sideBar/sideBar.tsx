@@ -2,6 +2,7 @@ import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/ico
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import React, { useState } from 'react';
+import styles from './sideBar.module.scss';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -52,7 +53,7 @@ const SideList: React.FC = () => {
   };
 
   return (
-    <>
+    <div className={styles.sideBar}>
       <Menu
         theme={'dark'}
         onClick={onClick}
@@ -62,7 +63,7 @@ const SideList: React.FC = () => {
         mode="inline"
         items={items}
       />
-    </>
+    </div>
   );
 };
 
