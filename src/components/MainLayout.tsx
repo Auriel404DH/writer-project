@@ -4,9 +4,6 @@ import styles from './Main.module.scss';
 import HeaderS from './header/Header';
 import FooterS from './footer/Footer';
 import { Layout } from 'antd';
-import SideList from './sideBar/sideBar';
-
-const { Sider } = Layout;
 
 interface Imain {
   children: any;

@@ -1,6 +1,12 @@
 .header {
   @apply text-sm flex items-center pb-2 border-b-2 justify-between;
   border-color: #e7a007;
+  position: fixed;
+  width: 100%;
+  background-color: #222327;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
 
   .nava {
     @apply flex justify-between items-center mr-4;
