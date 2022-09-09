@@ -1,33 +1,18 @@
 .header {
-  @apply text-sm flex items-center pb-2 border-b-2 justify-between;
-  border-color: #e7a007;
-  position: fixed;
-  width: 100%;
-  background-color: #222327;
-  margin: 0;
-  padding: 0;
-  z-index: 5;
+  @apply text-sm flex items-center py-1 justify-between bg-main2 sticky top-0 z-10;
 
   .nava {
     @apply flex justify-between items-center mr-4;
 
     .link {
-      @apply border-l-2 px-6 py-1;
-      color: #e7a007;
-      opacity: 0.7;
-      font-size: 1.3rem;
-      transition: .2s linear;
-    }
-    
-    .link:hover {
-      opacity: 1;
+      @apply px-6 py-1 text-main opacity-70 text-base transition-colors hover:opacity-100;
     }
   }
 
   .logo {
     @apply ml-4;
 
-    .logoImg {
+    img {
       @apply w-16;
     }
   }

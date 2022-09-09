@@ -1,26 +1,25 @@
 .main {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 85px;
-    z-index: 1;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 85px;
+  z-index: 1;
 }
 
 .title {
-    color: #e7a007;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
+  color: #e7a007;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .block__articles {
-    @apply flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  @apply flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-
 .authors__authors {
-    @apply flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  @apply flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

@@ -1,17 +1,27 @@
-.liked {
-    margin-top: 85px;
-}
-
-.liked__title {
-    font-size: 2rem;
-    text-align: center;
-    color: #e7a007;
-}
-
 .liked__articles {
-    width: 80%;
-    margin: 0 auto;
-    @apply flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  @apply flex flex-wrap justify-center m-3;
+}
+
+.title {
+  @apply text-slate-200 flex mt-10 mb-6 justify-center text-3xl;
+}
+
+.header {
+  @apply flex flex-wrap-reverse justify-around w-4/6 mx-auto;
+
+  &__left {
+    @apply flex w-3/6 items-center;
+
+    .left__item {
+      @apply px-2 py-1 mx-1 text-slate-200 bg-zinc-700 rounded;
+    }
+  }
+
+  &__right {
+    @apply flex mr-6;
+
+    .selectorStyle {
+      @apply bg-zinc-600 rounded m-1;
+    }
+  }
 }

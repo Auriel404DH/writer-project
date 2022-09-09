@@ -1,23 +1,68 @@
 import React from 'react';
-import Article from '../mainPage/article/Article';
+
 import styles from './likedPage.module.scss';
+import CardComponent from '../../components/LikedCard/card';
+import { Select } from 'antd';
+import 'antd/dist/antd.min.css';
+
+const { Option } = Select;
 
 const LikedPage: React.FC = () => {
-    const name = [
-        "Nikita Bogdankov",
-        "Vadim Chetoshnikov"
-    ]
-    return (
-        <div className={styles.liked}>
-            <div className={styles.liked__title}>Articles you've liked</div>
-            <div className={styles.liked__articles}>
-                <Article name={name[0]} />
-                <Article name={name[1]} />
-                <Article name={name[0]} />
-                <Article name={name[1]} />
-            </div>
+  return (
+    <>
+      <div>
+        <h1 className={styles.title}>Liked Posts</h1>
+      </div>
+      <div className={styles.header}>
+        <div className={styles.header__left}>
+          <div className={styles.left__item}>Total count: 36</div>
+          <div className={styles.left__item}>Favorite work: Forest</div>
+          <div className={styles.left__item}>Favorite Author: Karmony</div>
         </div>
-    );
-  };
-  
-  export default LikedPage;
+        <div className={styles.header__right}>
+          <div className={styles.selectorStyle}>
+            <Select defaultValue="Fantastic" bordered={false}>
+              <Option value="jack">Horror</Option>
+              <Option value="lucy">Humor</Option>
+              <Option value="Yiminghe">Fantastic</Option>
+              <Option value="Yiminghe">Romantic</Option>
+            </Select>
+          </div>
+          <div className={styles.selectorStyle}>
+            <Select defaultValue="Fantastic" bordered={false}>
+              <Option value="jack">Horror</Option>
+              <Option value="lucy">Humor</Option>
+              <Option value="Yiminghe">Fantastic</Option>
+              <Option value="Yiminghe">Romantic</Option>
+            </Select>
+          </div>
+          <div className={styles.selectorStyle}>
+            <Select defaultValue="Fantastic" bordered={false}>
+              <Option value="jack">Horror</Option>
+              <Option value="lucy">Humor</Option>
+              <Option value="Yiminghe">Fantastic</Option>
+              <Option value="Yiminghe">Romantic</Option>
+            </Select>
+          </div>
+          <div className={styles.selectorStyle}>
+            <Select defaultValue="Fantastic" bordered={false}>
+              <Option value="Horror">Horror</Option>
+              <Option value="Humor">Humor</Option>
+              <Option value="Fantastic">Fantastic</Option>
+              <Option value="Romantic">Romantic</Option>
+            </Select>
+          </div>
+        </div>
+      </div>
+      <div className={styles.liked__articles}>
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+      </div>
+    </>
+  );
+};
+
+export default LikedPage;

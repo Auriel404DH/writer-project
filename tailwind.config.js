@@ -8,16 +8,16 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-
+    fontFamily: {
+      ubuntuBold: ['UbuntuBold', 'sans-serif'],
+      ubuntuLight: ['UbuntuLight', 'sans-serif'],
+      ubuntuRegular: ['UbuntuRegular', 'sans-serif'],
+      ubuntuMedium: ['UbuntuMedium', 'sans-serif'],
+    },
     extend: {
       colors: {
-        toto: '#A38467',
-      },
-      backgroundColor: {
-        main: '#1D1A54',
-      },
-      fontFamily: {
-        body: ['Josefin+Sans'],
+        main: '#e7a007',
+        main2: '#222327',
       },
     },
   },

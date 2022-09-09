@@ -1,0 +1,8 @@
+.wrapper {
+  @apply min-h-screen bg-main2 flex flex-col text-slate-200 font-ubuntuMedium;
+
+  .main {
+    @apply flex-1;
+    background-color: #28292e;
+  }
+}

@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import MainLayout from './components/MainLayout';
-import { MainPage, ProfilePage, LikedPage, SubscriptionPage, EditorPage} from './pages';
+import MainLayout from './components/MainLayout/MainLayout';
+import { MainPage, ProfilePage, LikedPage, SubscriptionPage, EditorPage } from './pages';
 
 const App: React.FC = () => {
   return (
@@ -9,8 +9,8 @@ const App: React.FC = () => {
         <Route path="/" element={<MainPage />} />
         <Route path="/Profile" element={<ProfilePage />} />
         <Route path="/liked" element={<LikedPage />} />
-        <Route path='/subscriptions' element={<SubscriptionPage />} />
-        <Route path='/editor' element={<EditorPage />} />
+        <Route path="/subscriptions" element={<SubscriptionPage />} />
+        <Route path="/editor" element={<EditorPage />} />
       </Routes>
     </MainLayout>
   );

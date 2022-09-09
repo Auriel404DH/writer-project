@@ -1,8 +1,8 @@
 import React from 'react';
 import 'antd/dist/antd.min.css';
 import styles from './Main.module.scss';
-import HeaderS from './header/Header';
-import FooterS from './footer/Footer';
+import HeaderS from '../header/Header';
+import FooterS from '../footer/Footer';
 import { Layout } from 'antd';
 
 interface Imain {

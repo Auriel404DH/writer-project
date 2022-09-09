@@ -1,19 +1,16 @@
-import React from 'react';
-import styles from './Main.module.scss';
-
-import Author from './author/Author';
+import Author from '../../components/AuthorCard/Author';
 import Article from './article/Article';
-
+import styles from './Main.module.scss';
+import { Divider } from 'antd';
+import 'antd/dist/antd.min.css';
 
 const MainPage = () => {
-  const name = [
-    "Bogdankov Nikita",
-    "Vadim Chetoshnikov"
-  ];
+  const name = ['Bogdankov Nikita', 'Vadim Chetoshnikov'];
   return (
     <div className={styles.main}>
       <div className={styles.articles}>
-        <h1 className={styles.title}>Articles you might like</h1>
+        <Divider>Text</Divider>
+        {/* <h1 className={styles.title}>Articles you might like</h1> */}
         <div className={styles.block__articles}>
           <Article name={name[0]} />
           <Article name={name[1]} />
@@ -22,9 +19,7 @@ const MainPage = () => {
       </div>
 
       <div className={styles.authors}>
-        <div className={styles.title}>
-          Authors you might like
-        </div>
+        <div className={styles.title}>Authors you might like</div>
 
         <div className={styles.authors__authors}>
           <Author name={name[0]} sub={false} />
@@ -33,7 +28,6 @@ const MainPage = () => {
           <Author name={name[0]} sub={true} />
           <Author name={name[1]} sub={false} />
         </div>
-
       </div>
     </div>
   );

@@ -1,5 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;700&family=Roboto&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'UbuntuMedium';
+  src: url('./fonts/Ubuntu-Medium.ttf');
+}
+@font-face {
+  font-family: 'UbuntuBold';
+  src: url('./fonts/Ubuntu-Bold.ttf');
+}
+@font-face {
+  font-family: 'UbuntuRegular';
+  src: url('./fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+  font-family: 'UbuntuLight';
+  src: url('./fonts/Ubuntu-Light.ttf');
+}

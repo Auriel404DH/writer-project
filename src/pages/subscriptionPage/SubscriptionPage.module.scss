@@ -1,18 +1,11 @@
 .subscription {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 85px;
-}
+  @apply w-4/5 mx-auto;
 
-.subscription__title {
-    text-align: center;
-    font-size: 2rem;
-    color: #e7a007;
-    margin-bottom: 40px;
-}
+  &__title {
+    @apply mb-6 mt-10 text-center text-3xl text-main;
+  }
 
-.subscription__authors {
-    @apply flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  &__authors {
+    @apply flex flex-wrap justify-between;
+  }
 }
