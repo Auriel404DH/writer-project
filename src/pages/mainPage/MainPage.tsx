@@ -9,8 +9,8 @@ const MainPage = () => {
   return (
     <div className={styles.main}>
       <div className={styles.articles}>
-        <Divider>Text</Divider>
-        {/* <h1 className={styles.title}>Articles you might like</h1> */}
+        {/* <Divider className={styles.title}>Text</Divider> */}
+        <h1 className={styles.title}>Articles you might like</h1>
         <div className={styles.block__articles}>
           <Article name={name[0]} />
           <Article name={name[1]} />
