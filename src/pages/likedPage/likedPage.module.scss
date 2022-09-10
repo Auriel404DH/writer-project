@@ -13,15 +13,11 @@
     @apply flex w-3/6 items-center;
 
     .left__item {
-      @apply px-2 py-1 mx-1 text-slate-200 bg-zinc-700 rounded;
+      @apply px-2 py-1 mx-1 text-slate-200 bg-main rounded;
     }
   }
 
   &__right {
     @apply flex mr-6;
-
-    .selectorStyle {
-      @apply bg-zinc-600 rounded m-1;
-    }
   }
 }

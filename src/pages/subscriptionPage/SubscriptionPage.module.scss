@@ -1,11 +1,15 @@
 .subscription {
-  @apply w-4/5 mx-auto;
+  @apply mx-auto;
 
   &__title {
-    @apply mb-6 mt-10 text-center text-3xl text-main;
+    @apply mb-8 mt-10 text-center text-3xl text-slate-200;
+  }
+
+  &__container {
+    @apply mx-auto w-5/6 mb-4;
   }
 
   &__authors {
-    @apply flex flex-wrap justify-between;
+    @apply flex flex-wrap justify-start;
   }
 }

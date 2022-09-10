@@ -1,20 +1,35 @@
 .author {
-  @apply w-3/12 text-center mb-20 rounded transition-all m-3 px-2 hover:shadow-2xl min-h-max;
+  @apply w-5/12 mb-4 mx-12 flex justify-between items-center text-center bg-main2 max-h-36 rounded-l-full;
 
   &__name {
-    @apply text-3xl mb-2.5 py-2 border-b-2 border-slate-400;
+    @apply text-slate-400 cursor-pointer hover:text-slate-600 duration-200;
+  }
+
+  &__header {
+    @apply mr-1 border-2 border-main rounded-full;
+  }
+
+  &__main {
+    @apply flex flex-col;
+  }
+
+  &__tags {
+    @apply mx-1 px-1.5 rounded text-slate-400;
   }
 
   &__photo {
-    @apply mx-auto w-full object-cover rounded-t-xl mb-1;
+    @apply w-52 object-cover;
   }
 
   &__description {
-    @apply mb-1 h-44 overflow-hidden;
+    @apply mx-auto flex flex-wrap;
+  }
+
+  &__footer {
+    @apply flex flex-col mr-4;
   }
 
   &__button {
-    @apply text-base mt-5 text-main max-w-xl font-semibold px-2 py-1 mb-2 rounded hover:text-main2 hover:bg-main;
-    transition: 0.3s linear;
+    @apply bg-main mt-1 px-3 rounded cursor-pointer duration-200 first:mt-0 hover:bg-main2 hover:text-main;
   }
 }

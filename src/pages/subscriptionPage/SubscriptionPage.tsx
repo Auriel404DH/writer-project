@@ -7,12 +7,21 @@ const Subscription: React.FC = () => {
   return (
     <div className={styles.subscription}>
       <div className={styles.subscription__title}> Authors you've subscribed</div>
-      <div className={styles.subscription__authors}>
-        <Author name={name[0]} sub={true} />
-        <Author name={name[0]} sub={true} />
-        <Author name={name[1]} sub={true} />
-        <Author name={name[0]} sub={true} />
-        <Author name={name[1]} sub={true} />
+      <div className={styles.subscription__container}>
+        <div className={styles.subscription__authors}>
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+        </div>
+      </div>
+      <div>
+        <div className="w-fit mx-auto cursor-pointer my-6 hover:text-main">Find more</div>
       </div>
     </div>
   );
