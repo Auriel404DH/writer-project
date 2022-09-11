@@ -12,9 +12,9 @@ const MainPage = () => {
         <Divider>Text</Divider>
         {/* <h1 className={styles.title}>Articles you might like</h1> */}
         <div className={styles.block__articles}>
-          <Article name={name[0]} />
-          <Article name={name[1]} />
-          <Article name={name[0]} />
+          <Article name="Vasya" />
+          <Article name="Vasya" />
+          <Article name="Vasya" />
         </div>
       </div>
 

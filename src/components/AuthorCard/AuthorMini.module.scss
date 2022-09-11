@@ -1,5 +1,5 @@
 .author {
-  @apply w-5/12 mb-6 mx-12 flex justify-between items-center text-center rounded-l-full;
+  @apply mt-2 mb-4 pl-3 flex items-center text-center justify-start;
 
   &__name {
     @apply text-slate-400 cursor-pointer hover:text-slate-600 duration-200;
@@ -10,15 +10,11 @@
   }
 
   &__main {
-    @apply flex flex-col;
-  }
-
-  &__tags {
-    @apply mx-1.5 rounded text-slate-400 text-xs;
+    @apply flex flex-col ml-2;
   }
 
   &__photo {
-    @apply w-52 object-cover;
+    @apply w-16 object-cover;
   }
 
   &__description {

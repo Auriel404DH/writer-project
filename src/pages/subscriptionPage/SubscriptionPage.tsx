@@ -1,5 +1,6 @@
 import React from 'react';
 import Author from '../../components/AuthorCard/Author';
+import AuthorRecs from '../../components/AuthorsRecs/AuthorRecs';
 import styles from './SubscriptionPage.module.scss';
 
 const Subscription: React.FC = () => {
@@ -18,10 +19,14 @@ const Subscription: React.FC = () => {
           <Author name={name[0]} sub={true} />
           <Author name={name[0]} sub={true} />
           <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
+          <Author name={name[0]} sub={true} />
         </div>
-      </div>
-      <div>
-        <div className="w-fit mx-auto cursor-pointer my-6 hover:text-main">Find more</div>
+        <AuthorRecs names={name} />
       </div>
     </div>
   );
