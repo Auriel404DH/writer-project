@@ -3,6 +3,7 @@ import Article from './article/Article';
 import styles from './Main.module.scss';
 import { Divider } from 'antd';
 import 'antd/dist/antd.min.css';
+import CardComponent from '../../components/LikedCard/card';
 
 const MainPage = () => {
   const name = ['Bogdankov Nikita', 'Vadim Chetoshnikov'];
@@ -12,9 +13,10 @@ const MainPage = () => {
         {/* <Divider className={styles.title}>Text</Divider> */}
         <h1 className={styles.title}>Articles you might like</h1>
         <div className={styles.block__articles}>
-          <Article name={name[0]} />
-          <Article name={name[1]} />
-          <Article name={name[0]} />
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
         </div>
       </div>
 
