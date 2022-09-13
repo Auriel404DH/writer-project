@@ -11,7 +11,7 @@ const AuthorRecs: React.FC<IAuthorRecs> = ({ names }) => {
   return (
     <div className={styles.recs}>
       <Input size="large" placeholder="Search Author ..." prefix={<UserOutlined />} />
-      <div className="mt-2">
+      <div>
         <div className={styles.recs__buttons}>
           <button className={styles.recs__button}>Friends</button>
           <button className={styles.recs__button}>Resents</button>

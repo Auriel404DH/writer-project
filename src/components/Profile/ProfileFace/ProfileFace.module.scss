@@ -1,0 +1,19 @@
+.face {
+  @apply text-center py-6 rounded bg-main2 mx-4;
+
+  &__online {
+    @apply text-green-400;
+  }
+
+  &__content {
+    @apply flex justify-between my-2 px-3;
+  }
+
+  &__key {
+    @apply text-main3;
+  }
+
+  &__value {
+    @apply text-main inline;
+  }
+}

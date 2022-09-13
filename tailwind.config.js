@@ -18,6 +18,7 @@ module.exports = {
       colors: {
         main: '#e7a007',
         main2: '#222327',
+        main3: 'rgb(148 163 184 / var(--tw-text-opacity))',
       },
     },
   },

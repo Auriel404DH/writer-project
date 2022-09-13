@@ -1,7 +1,7 @@
 import React from 'react';
 import 'antd/dist/antd.min.css';
 import styles from './footer.module.scss';
-import logoFoot from '../../assets/footerLogo.png';
+import logoFoot from '../../../assets/footerLogo.png';
 
 const Footer: React.FC = () => {
   return (

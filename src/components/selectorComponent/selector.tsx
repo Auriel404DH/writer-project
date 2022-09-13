@@ -4,14 +4,21 @@ import 'antd/dist/antd.min.css';
 
 const { Option } = Select;
 
-const Selector = () => {
+interface ISelector {
+  tag1: string;
+  tag2: string;
+  tag3: string;
+  tag4: string;
+}
+
+const Selector: React.FC<ISelector> = ({ tag1, tag2, tag3, tag4 }) => {
   return (
     <div className={styles.selectorStyle}>
-      <Select defaultValue="Fantastic" bordered={false}>
-        <Option value="jack">Horror</Option>
-        <Option value="lucy">Humor</Option>
-        <Option value="Yiminghe">Fantastic</Option>
-        <Option value="Yiminghe">Romantic</Option>
+      <Select defaultValue="Choose..." bordered={false}>
+        <Option value={tag1}>{tag1}</Option>
+        <Option value={tag2}>{tag2}</Option>
+        <Option value={tag3}>{tag3}</Option>
+        <Option value={tag4}>{tag4}</Option>
       </Select>
     </div>
   );

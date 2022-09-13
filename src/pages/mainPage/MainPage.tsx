@@ -1,4 +1,4 @@
-import Author from '../../components/AuthorCard/Author';
+import Author from '../../components/Author/AuthorCard/Author';
 import Article from './article/Article';
 import styles from './Main.module.scss';
 import { Divider } from 'antd';

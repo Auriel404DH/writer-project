@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './card.module.scss';
 import { Button, Tag } from 'antd';
-import { Avatar, Card } from 'antd';
+import { Card } from 'antd';
 
 const { Meta } = Card;
 
 const CardComponent: React.FC = () => {
-  const title = <div className="text-slate-200">Card title</div>;
+  const title = <div className="text-main3 text-center">Card title</div>;
 
   const disc = (
-    <div className="text-slate-400">
+    <div className="text-slate-100">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam, provident,
       distinctio asperiores dicta, quibusdam soluta nesciunt sint alias temporibus officiis atque
       harum aspernatur? Incidunt rerum praesentium assumenda iure quas!
@@ -26,12 +26,7 @@ const CardComponent: React.FC = () => {
         />
       }
     >
-      <Meta
-        className={styles.discription}
-        avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
-        title={title}
-        description={disc}
-      />
+      <Meta className={styles.discription} title={title} description={disc} />
       <div className={styles.buttons}>
         <div className={styles.firstButtons}>
           <Button className="m-1">Novel</Button>
@@ -92,5 +87,7 @@ const CardComponent: React.FC = () => {
     </Card>
   );
 };
+
+// avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
 
 export default CardComponent;

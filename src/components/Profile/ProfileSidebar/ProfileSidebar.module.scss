@@ -1,0 +1,11 @@
+.sidebar {
+  @apply text-center w-fit bg-main2 p-3 flex flex-col rounded-l;
+
+  &__menu {
+    @apply mb-2 pb-1 border-b text-main3 border-main3;
+  }
+
+  &__button {
+    @apply mt-1 bg-main px-8 py-1 cursor-pointer rounded duration-200 first:mt-0 hover:bg-main2 hover:text-main;
+  }
+}

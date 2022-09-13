@@ -1,5 +1,5 @@
 .author {
-  @apply w-5/12 mb-6 mx-12 flex justify-between items-center text-center rounded-l-full;
+  @apply w-5/12 mb-6 flex justify-between items-center text-center rounded-l-full;
 
   &__name {
     @apply text-slate-400 cursor-pointer hover:text-slate-600 duration-200;

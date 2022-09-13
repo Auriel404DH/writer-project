@@ -1,0 +1,15 @@
+.Acheves {
+  @apply bg-main2 pl-3 pb-4 rounded;
+
+  &__text {
+    @apply text-center w-11/12 py-2 text-main3;
+  }
+
+  &__AcheveContainer {
+    @apply flex flex-wrap  justify-start;
+  }
+
+  &__acheve {
+    @apply h-fit w-20 m-1;
+  }
+}

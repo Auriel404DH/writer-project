@@ -24,8 +24,4 @@
   &__footer {
     @apply flex flex-col mr-4;
   }
-
-  &__button {
-    @apply bg-main mt-1 px-3 rounded cursor-pointer duration-200 first:mt-0 hover:bg-main2 hover:text-main;
-  }
 }

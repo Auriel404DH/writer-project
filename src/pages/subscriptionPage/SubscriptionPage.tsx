@@ -1,13 +1,30 @@
 import React from 'react';
-import Author from '../../components/AuthorCard/Author';
-import AuthorRecs from '../../components/AuthorsRecs/AuthorRecs';
+import Author from '../../components/Author/AuthorCard/Author';
+import AuthorRecs from '../../components/Author/AuthorsRecs/AuthorRecs';
 import styles from './SubscriptionPage.module.scss';
+import Selector from '../../components/selectorComponent/selector';
+import 'antd/dist/antd.min.css';
 
 const Subscription: React.FC = () => {
   const name = ['Bogdankov Nikita', 'Vadim Chetoshnikov'];
   return (
     <div className={styles.subscription}>
       <div className={styles.subscription__title}> Authors you've subscribed</div>
+
+      <div className={styles.subscription__filter}>
+        <div className={styles.subscription__left}>
+          <div className={styles.left__item}>Total count: 12</div>
+          <div className={styles.left__item}>Favorite Жанр: Romance</div>
+          <div className={styles.left__item}>Favorite Author: Karmony</div>
+        </div>
+        <div className={styles.subscription__right}>
+          <Selector tag1={'Romantic'} tag2={'Horror'} tag3={'Fantastic'} tag4={'Novel'} />
+          <Selector tag1={'By Name'} tag2={'By popular'} tag3={'By likes'} tag4={'By my list'} />
+          <Selector tag1={'1 month'} tag2={'2 weeks'} tag3={'week'} tag4={'3 days'} />
+          <Selector tag1={'A'} tag2={'B'} tag3={'S'} tag4={'R'} />
+        </div>
+      </div>
+
       <div className={styles.subscription__container}>
         <div className={styles.subscription__authors}>
           <Author name={name[0]} sub={true} />
@@ -26,7 +43,9 @@ const Subscription: React.FC = () => {
           <Author name={name[0]} sub={true} />
           <Author name={name[0]} sub={true} />
         </div>
-        <AuthorRecs names={name} />
+        <div className="fixed right-8">
+          <AuthorRecs names={name} />
+        </div>
       </div>
     </div>
   );

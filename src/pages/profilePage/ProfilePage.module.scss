@@ -1,9 +1,25 @@
 .profile {
-  margin-top: 85px;
-}
+  &__title {
+    @apply pb-2 mt-6 border-b-2 border-main text-center mx-auto w-7/12 text-3xl text-slate-200;
+  }
 
-.profile__title {
-  color: #e7a007;
-  font-size: 2rem;
-  text-align: center;
+  &__button {
+    @apply bg-main px-10 cursor-pointer duration-200 hover:bg-main2 hover:text-main;
+  }
+
+  &__sidebar {
+    @apply fixed right-0;
+  }
+
+  &__info {
+    @apply flex justify-center items-center my-5 w-9/12 mx-auto;
+
+    &_item {
+      @apply w-3/12;
+    }
+  }
+
+  &__bottom {
+    @apply w-7/12 mx-auto pr-4 mb-6;
+  }
 }
