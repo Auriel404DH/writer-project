@@ -1,11 +1,11 @@
 import React from "react";
 import "antd/dist/antd.min.css";
 import styles from "./footer.module.scss";
-import logoFoot from "../../assets/logo2.png";
-import vk_icon from "../../assets/vk_icon.png";
-import inst_icon from "../../assets/inst_icon.png";
-import tg_icon from "../../assets/tg_icon.png";
-import discord_icon from "../../assets/discord_icon.png";
+import logoFoot from "../../../assets/logo2.png";
+import vk_icon from "../../../assets/vk_icon.png";
+import inst_icon from "../../../assets/inst_icon.png";
+import tg_icon from "../../../assets/tg_icon.png";
+import discord_icon from "../../../assets/discord_icon.png";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {

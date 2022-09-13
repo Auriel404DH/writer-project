@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './header.module.scss';
-import logo from '../../assets/logo2.png';
+import logo from '../../../assets/logo2.png';
 import { Link } from 'react-router-dom';
 import { Divider } from 'antd';
 import 'antd/dist/antd.min.css';

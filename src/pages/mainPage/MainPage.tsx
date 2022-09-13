@@ -3,7 +3,7 @@ import Article from './article/Article';
 import styles from './Main.module.scss';
 import { Divider } from 'antd';
 import 'antd/dist/antd.min.css';
-import CardComponent from '../../components/LikedCard/card';
+import CardComponent from '../../components/Liked/LikedCard/CardComponent';
 
 const MainPage = () => {
   const name = ['Bogdankov Nikita', 'Vadim Chetoshnikov'];
