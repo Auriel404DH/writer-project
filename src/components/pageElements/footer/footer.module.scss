@@ -27,16 +27,35 @@ footer {
 
     &__link {
       @apply pt-1.5 text-sm;
-      a {
-        color: #fff;
-        transition: 0.3s;
-        border-bottom: 2px solid #222327;
-      }
-
-      a:hover {
-        border-bottom: 1px solid #fff;
-      }
+      color: #fff;
+      transition: .3s;
+      border-bottom: 2px solid #222327;
     }
+
+    &__link:hover {
+      border-bottom: 2px solid #fff;
+    }
+    
+    &__link__mb {
+      margin-bottom: 8px;
+    }
+
+    &__icons {
+      margin-left: 25px;
+    }
+
+    &__icon {
+      margin-bottom: 7px;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      transition: .3s;
+    }
+
+    &__icon:hover {
+      transform: translateY(-2px);
+    }
+
   }
 
   .footerDown {
