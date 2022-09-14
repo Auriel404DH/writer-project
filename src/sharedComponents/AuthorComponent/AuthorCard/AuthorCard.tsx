@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Author.module.scss';
+import styles from './AuthorCard.module.scss';
 import authorPhoto from '../../../assets/author.jpg';
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar, Typography } from 'antd';

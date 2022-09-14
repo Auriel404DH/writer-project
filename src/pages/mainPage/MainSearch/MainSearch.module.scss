@@ -1,0 +1,28 @@
+
+.search {
+    margin-top: 40px;
+    text-align: center;
+
+    &__title {
+        font-size: 30px;
+        color: #e7a007;
+    }
+
+    &__input {
+        margin-top: 20px;
+        width: 700px;
+        height: 60px;
+        border: 5px solid #e7a007;
+        border-radius: 30px;
+        padding: 20px 50px;
+        color: #e7a007;
+        font-size: 20px;
+        background-color: #28292e;
+        outline: none;
+        transition: .3s;
+    }
+
+    &__input:focus {
+        border-color: #fff;
+    }
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import 'antd/dist/antd.min.css';
 import styles from './Main.module.scss';
-import HeaderS from '../header/Header';
-import FooterS from '../footer/Footer';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import { Layout } from 'antd';
 
 interface Imain {
@@ -12,11 +12,11 @@ interface Imain {
 const MainLayout: React.FC<Imain> = ({ children }) => {
   return (
     <div className={styles.wrapper}>
-      <HeaderS />
+      <Header />
       <Layout>
         <main className={styles.main}>{children}</main>
       </Layout>
-      <FooterS />
+      <Footer />
     </div>
   );
 };

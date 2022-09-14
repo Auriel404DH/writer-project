@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './likedPage.module.scss';
-import CardComponent from '../../components/Liked/LikedCard/CardComponent';
-import Selector from '../../components/selectorComponent/selector';
+import CardComponent from '../../sharedComponents/ArticleComponent/ArticleCard/ArticleCard';
+import Selector from '../../sharedComponents/selectorComponent/selector';
 import 'antd/dist/antd.min.css';
 
 const LikedPage: React.FC = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import "antd/dist/antd.min.css";
-import styles from "./footer.module.scss";
+import styles from "./Footer.module.scss";
 import logoFoot from "../../../assets/logo2.png";
 import vk_icon from "../../../assets/vk_icon.png";
 import inst_icon from "../../../assets/inst_icon.png";

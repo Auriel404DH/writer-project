@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './ProfilePage.module.scss';
-import ProfileSidebar from '../../components/Profile/ProfileSidebar/ProfileSidebar';
-import ProfileFace from '../../components/Profile/ProfileFace/ProfileFace';
-import ProfileMenu from '../../components/Profile/ProfileMenu/ProfileMenu';
-import ProfileAcheves from '../../components/Profile/ProfileAcheves/ProfileAcheves';
-import ProfilePost from '../../components/Profile/ProfilePost/ProfilePost';
+import ProfileSidebar from './ProfileSidebar/ProfileSidebar';
+import ProfileFace from './ProfileFace/ProfileFace';
+import ProfileMenu from './ProfileMenu/ProfileMenu';
+import ProfileAchieves from './ProfileAchieves/ProfileAchieves';
+import ProfilePost from './ProfilePost/ProfilePost';
 
 const Profile: React.FC = () => {
   return (
@@ -23,7 +23,7 @@ const Profile: React.FC = () => {
           <ProfileFace />
         </div>
         <div className={styles.profile__info_item}>
-          <ProfileAcheves />
+          <ProfileAchieves />
         </div>
       </div>
 

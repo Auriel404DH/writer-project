@@ -51,7 +51,7 @@ const ProfilePost = () => {
           <Tag color="red">Fantastic</Tag>
           <Tag color="gold">Completed</Tag>
           <Tag color="purple">R</Tag>
-          <Tag color="blue">32 главы</Tag>
+          <Tag color="blue">32 chapters</Tag>
           <Tag color="black">qwe</Tag>
         </div>
       </div>

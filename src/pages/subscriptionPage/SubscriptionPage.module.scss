@@ -1,6 +1,7 @@
 .subscription {
   &__title {
     @apply pb-2 mt-6 border-b-2 border-main text-center mx-auto w-7/12 text-3xl text-slate-200;
+    color: #e7a007
   }
 
   &__container {

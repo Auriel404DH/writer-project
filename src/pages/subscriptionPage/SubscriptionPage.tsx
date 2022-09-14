@@ -1,8 +1,8 @@
 import React from 'react';
-import Author from '../../components/Author/AuthorCard/Author';
-import AuthorRecs from '../../components/Author/AuthorsRecs/AuthorRecs';
+import Author from '../../sharedComponents/AuthorComponent/AuthorCard/AuthorCard';
+import AuthorRecs from './AuthorsRecs/AuthorRecs';
 import styles from './SubscriptionPage.module.scss';
-import Selector from '../../components/selectorComponent/selector';
+import Selector from '../../sharedComponents/selectorComponent/selector';
 import 'antd/dist/antd.min.css';
 
 const Subscription: React.FC = () => {
@@ -14,7 +14,7 @@ const Subscription: React.FC = () => {
       <div className={styles.subscription__filter}>
         <div className={styles.subscription__left}>
           <div className={styles.left__item}>Total count: 12</div>
-          <div className={styles.left__item}>Favorite Жанр: Romance</div>
+          <div className={styles.left__item}>Favorite Genre: Romance</div>
           <div className={styles.left__item}>Favorite Author: Karmony</div>
         </div>
         <div className={styles.subscription__right}>

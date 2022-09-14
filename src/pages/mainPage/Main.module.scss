@@ -1,15 +1,23 @@
 .main {
   width: 80%;
   margin: 0 auto;
-  margin-top: 85px;
   z-index: 1;
 }
 
 .title {
+  @apply border-b-2 border-main;
+  width: 58%;
+  margin: 0 auto;
   color: #e7a007;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
+  margin-top: 1.5rem;
+}
+
+.articles__tags {
+  @apply flex;
+  justify-content: center;
 }
 
 .block__articles {
@@ -21,6 +29,7 @@
 
 .authors__authors {
   @apply flex;
+  margin-top: 1.5rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }

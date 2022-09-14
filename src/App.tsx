@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import MainLayout from './components/pageElements/MainLayout/MainLayout';
+import MainLayout from './sharedComponents/pageElements/MainLayout/MainLayout';
 import { MainPage, ProfilePage, LikedPage, SubscriptionPage, EditorPage } from './pages';
 
 const App: React.FC = () => {
