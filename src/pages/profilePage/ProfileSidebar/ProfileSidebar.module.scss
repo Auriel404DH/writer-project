@@ -8,4 +8,12 @@
   &__button {
     @apply mt-1 bg-main px-8 py-1 cursor-pointer rounded duration-200 first:mt-0 hover:bg-main2 hover:text-main;
   }
+
+  &__button__link {
+    color: white;
+  }
+
+  &__button__link:hover {
+    color: #e7a007;
+  }
 }

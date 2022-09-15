@@ -1,0 +1,14 @@
+
+.settings {
+
+    &__title {
+        @apply border-b-2 border-main;
+        width: 58%;
+        margin: 0 auto;
+        color: #e7a007;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-top: 1.5rem;
+    }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './ProfileSidebar.module.scss';
 
 const ProfileSidebar = () => {
@@ -12,7 +13,9 @@ const ProfileSidebar = () => {
         <div className={styles.sidebar__button}>Liked</div>
         <div className={styles.sidebar__button}>Achievements</div>
         <div className={styles.sidebar__button}>Privacy</div>
-        <div className={styles.sidebar__button}>Settings</div>
+        <div className={styles.sidebar__button}>
+          <Link className={styles.sidebar__button__link} to="./settings">Settings</Link>
+        </div>
         <div className={styles.sidebar__button}>Exit</div>
       </nav>
     </div>

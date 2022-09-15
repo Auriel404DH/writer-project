@@ -1,0 +1,35 @@
+
+.language {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+
+    &__title {
+        font-size: 25px;
+    }
+
+    &__choose {
+        @apply flex;
+        justify-content: space-between;
+
+        &__text {
+            font-size: 25px;
+        }
+
+        &__button {
+            background-color: #28292e;
+            font-size: 20px;
+            color: #e7a007;
+            border: 3px solid #e7a007;
+            border-radius: 10px;
+            padding: 0px 20px;
+            outline: none;
+            transition: .3s;
+        }
+
+        &__button:hover {
+            border-color: #fff;
+        }
+    }
+}
