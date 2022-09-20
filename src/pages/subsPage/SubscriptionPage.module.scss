@@ -1,0 +1,30 @@
+.subscription {
+  &__title {
+    @apply pb-2 mb-3 mt-6 border-b-2 border-main text-center mx-auto w-7/12 text-3xl text-slate-200;
+    color: #e7a007;
+  }
+
+  &__container {
+    @apply flex mb-4 pt-4;
+  }
+
+  &__filter {
+    @apply flex justify-around mt-3;
+  }
+
+  &__authors {
+    @apply flex flex-wrap justify-around w-9/12 ml-8 rounded pt-6 bg-main2;
+  }
+
+  &__left {
+    @apply flex items-center;
+  }
+
+  &__right {
+    @apply flex;
+  }
+
+  .left__item {
+    @apply px-2 py-1 mx-1 text-slate-200 bg-main rounded;
+  }
+}

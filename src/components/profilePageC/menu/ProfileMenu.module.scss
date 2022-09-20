@@ -1,0 +1,15 @@
+.menu {
+  @apply grid grid-cols-2 gap-3 text-center;
+
+  &__item {
+    @apply bg-main2 rounded-md py-1 flex flex-col justify-center;
+
+    &_key {
+      @apply text-main3;
+    }
+
+    &_value {
+      @apply text-main inline;
+    }
+  }
+}

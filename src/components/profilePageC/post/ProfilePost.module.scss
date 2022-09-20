@@ -1,0 +1,51 @@
+.Post {
+  @apply flex items-center;
+
+  &__left {
+    @apply w-1/6;
+
+    &_theme {
+      @apply my-1.5 flex justify-between px-2 py-1 mx-2 rounded bg-main2;
+    }
+
+    &_key {
+      @apply text-main3;
+    }
+
+    &_value {
+      @apply text-main;
+    }
+  }
+
+  &__right {
+    @apply w-10/12 h-44 overflow-hidden overflow-ellipsis flex bg-main2 my-2 justify-between ml-auto rounded;
+
+    &_img {
+      @apply w-3/12 ml-2 flex items-center;
+    }
+
+    &_text {
+      @apply w-3/6;
+    }
+
+    &_title {
+      @apply text-main3 text-2xl mt-2 hover:text-slate-600 duration-200;
+    }
+
+    &_acheve {
+      @apply mx-2;
+    }
+
+    &_acheves {
+      @apply flex mt-2 py-2 w-11/12;
+    }
+
+    &_tags {
+      @apply m-2 flex flex-col items-end justify-around;
+    }
+
+    &_tag {
+      @apply px-2 bg-main rounded text-slate-900 font-medium;
+    }
+  }
+}

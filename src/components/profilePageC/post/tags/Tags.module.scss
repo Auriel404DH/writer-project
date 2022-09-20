@@ -1,0 +1,7 @@
+.Post {
+  &__right {
+    &_tags {
+      @apply m-2 flex flex-col items-end justify-around;
+    }
+  }
+}
