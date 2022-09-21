@@ -1,6 +1,6 @@
 footer {
   .footer {
-    @apply flex justify-around py-1 items-center;
+    @apply flex justify-around pt-1 items-center;
 
     &__title {
       @apply font-bold mb-1 text-main text-sm;

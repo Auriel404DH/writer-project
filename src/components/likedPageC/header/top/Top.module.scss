@@ -1,7 +1,7 @@
 .header {
   &__left {
     &_item {
-      @apply text-lg text-main2 h-fit bg-main px-2 m-1 py-0.5 rounded hover:text-main hover:bg-main2 hover:cursor-pointer duration-200;
+      @apply text-base text-main2 bg-main px-2 m-1 py-0.5 rounded hover:text-main hover:bg-main2 hover:cursor-pointer duration-200 whitespace-nowrap;
     }
   }
 

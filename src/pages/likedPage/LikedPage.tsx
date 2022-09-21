@@ -12,13 +12,41 @@ const LikedPage: React.FC = () => {
     fandom: 'TMNT',
   };
 
+  const genres = [
+    'Fantasy',
+    'Novel',
+    'Romance',
+    'Detective',
+    'Mistic',
+    'Historical',
+    'Adventure',
+    'Drama',
+    'Humor',
+    'Crime',
+    'Angst',
+    'Friendship',
+    'Family',
+  ];
+  const status = ['Completed', 'In Process', 'Abandoned', 'Canceled'];
+  const sort = ['By name', 'By count', 'By rating', 'By genre', 'By status', 'By likes'];
+  const rating = ['G', 'PG', 'PG-13', 'R', 'NC-17'];
+
+  const favoriteWork = 'Forest';
+
   return (
     <>
       <div>
         <h1 className={styles.title}>Liked Posts</h1>
       </div>
 
-      <LikedHeader />
+      <LikedHeader
+        likedPage={true}
+        favorite={favoriteWork}
+        genres={genres}
+        status={status}
+        sort={sort}
+        rating={rating}
+      />
 
       <div className={styles.liked__articles}>
         <CardComponent

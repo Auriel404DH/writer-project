@@ -11,6 +11,7 @@ const AcceptedParamsList = ({
   chooseStyle,
   setAcceptedParams,
 }: IAcceptedParams) => {
+  
   const returnToChoose = (i: string) => {
     setAcceptedParams((prev: string[]) => prev.filter((elem) => elem !== i));
   };

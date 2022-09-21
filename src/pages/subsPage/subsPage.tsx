@@ -1,28 +1,44 @@
 import React from 'react';
 import { Author, AuthorRecs } from '../../components/subsPageC';
-import { Selector } from '../../components/likedPageC';
+import { LikedHeader } from '../../components/likedPageC';
 import styles from './SubscriptionPage.module.scss';
 import 'antd/dist/antd.min.css';
 
 const Subscription: React.FC = () => {
   const name = ['Bogdankov Nikita', 'Vadim Chetoshnikov'];
+
+  const favoriteAuthor = 'Vadim Chetoshkin';
+
+  const genres = [
+    'Fantasy',
+    'Novel',
+    'Romance',
+    'Detective',
+    'Mistic',
+    'Historical',
+    'Adventure',
+    'Drama',
+    'Humor',
+    'Crime',
+    'Angst',
+    'Friendship',
+    'Family',
+  ];
+  const status = ['Completed', 'In Process', 'Abandoned', 'Canceled'];
+  const sort = ['By name', 'By count', 'By rating', 'By genre', 'By status', 'By likes'];
+  const rating = ['G', 'PG', 'PG-13', 'R', 'NC-17'];
+
   return (
     <div className={styles.subscription}>
       <div className={styles.subscription__title}> Authors you've subscribed</div>
-      <div className={styles.subscription__filter}>
-        <div className={styles.subscription__left}>
-          <div className={styles.left__item}>Total count: 12</div>
-          <div className={styles.left__item}>Favorite Genre: Romance</div>
-          <div className={styles.left__item}>Favorite Author: Karmony</div>
-        </div>
-        <div className={styles.subscription__right}>
-          <Selector tag1={'Romantic'} tag2={'Horror'} tag3={'Fantastic'} tag4={'Novel'} />
-          <Selector tag1={'By Name'} tag2={'By popular'} tag3={'By likes'} tag4={'By my list'} />
-          <Selector tag1={'1 month'} tag2={'2 weeks'} tag3={'week'} tag4={'3 days'} />
-          <Selector tag1={'A'} tag2={'B'} tag3={'S'} tag4={'R'} />
-        </div>
-      </div>
-
+      <LikedHeader
+        likedPage={false}
+        favorite={favoriteAuthor}
+        genres={genres}
+        status={status}
+        sort={sort}
+        rating={rating}
+      />
       <div className={styles.subscription__container}>
         <div className={styles.subscription__authors}>
           <Author name={name[0]} sub={true} />
@@ -41,7 +57,7 @@ const Subscription: React.FC = () => {
           <Author name={name[0]} sub={true} />
           <Author name={name[0]} sub={true} />
         </div>
-        <div className="fixed right-8">
+        <div className="right-10 fixed">
           <AuthorRecs names={name} />
         </div>
       </div>

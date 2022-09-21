@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
           </nav>
         </div>
         <div className={styles.footer__center}>
-          <div className="mx-auto mb-4">
+          <div className="mx-auto mb-2 ">
             <img className="w-24" src={logoFoot} alt="#" />
           </div>
           <div className={styles.footerDown}>Copyright © 2022 B&K Labs Inc. Trademark Policy</div>

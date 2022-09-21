@@ -1,23 +1,57 @@
 .recs {
-  @apply mt-2;
+  @apply rounded w-72;
 
-  &__buttons {
-    @apply flex justify-around my-3;
+  &__up {
+    @apply pb-2 bg-main2 rounded pt-1;
   }
 
-  &__button {
-    @apply hover:text-main duration-200;
+  &__inputAuthor {
+    @apply w-11/12 mx-auto;
+  }
+
+  &__title {
+    @apply text-center mb-1 text-lg text-main3;
+  }
+
+  &__buttons {
+    @apply flex justify-around pt-2;
+  }
+
+  &__findButton {
+    @apply w-fit mx-3 px-3 rounded text-main2 bg-main hover:bg-main2 hover:text-main duration-200 cursor-pointer;
+  }
+
+  &__down {
+    @apply mt-2 bg-main2 rounded;
   }
 
   &__interesting {
-    @apply bg-main2 rounded-xl;
+    @apply text-center text-main3;
   }
 
   &__intButton {
-    @apply py-1 px-4 hover:text-main;
+    @apply mt-1 mb-1.5 text-base hover:text-main duration-200;
   }
 
   &__findMore {
-    @apply text-center py-1 border-t hover:bg-main hover:rounded-b-xl hover:text-main2 duration-200 hover:border-main2;
+    @apply py-1 flex justify-center items-center border-t text-main3 border-main hover:bg-main hover:rounded-b-xl hover:text-main2 duration-200 hover:border-main2;
   }
+}
+
+.qwe {
+  background-color: #28292e;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+  // width: 250px;
+  border-radius: 4px;
+  margin: 0 auto 0 auto;
+  padding: 6px 0 6px 10px;
+  transition: none;
+}
+
+.qwe:hover {
+  background-color: #28292e;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }

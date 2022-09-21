@@ -9,28 +9,18 @@ import RightButtons from './rightButtons/RightButtons';
 import Top from './top/Top';
 import AcceptedParamsList from './acceptedParams/AcceptedParamsList';
 
-const LikedHeader = () => {
-  const [show, setShow] = React.useState<boolean>(false);
-  const [AcceptedParams, setAcceptedParams] = React.useState<string[]>([]);
+interface ILikedHeader {
+  genres: string[];
+  status: string[];
+  sort: string[];
+  rating: string[];
+  favorite: string;
+  likedPage: boolean;
+}
 
-  const genres = [
-    'Fantasy',
-    'Novel',
-    'Romance',
-    'Detective',
-    'Mistic',
-    'Historical',
-    'Adventure',
-    'Drama',
-    'Humor',
-    'Crime',
-    'Angst',
-    'Friendship',
-    'Family',
-  ];
-  const status = ['Completed', 'In Process', 'Abandoned', 'Canceled'];
-  const sort = ['By name', 'By count', 'By rating', 'By genre', 'By status', 'By likes'];
-  const rating = ['G', 'PG', 'PG-13', 'R', 'NC-17'];
+const LikedHeader = ({ genres, status, sort, rating, favorite, likedPage }: ILikedHeader) => {
+  const [show, setShow] = React.useState<boolean>(true);
+  const [AcceptedParams, setAcceptedParams] = React.useState<string[]>([]);
 
   const chooseAll = (i: string) => {
     return cl({
@@ -74,11 +64,21 @@ const LikedHeader = () => {
     }
   };
 
+  const returnToChooseAll = () => {
+    setAcceptedParams([]);
+  };
+
   return (
     <div className={cl({ [styles.header]: true, [styles.header__closed]: show })}>
-      <Top show={show} toggleShow={toggleShow} ShowIcon={ShowIcon} />
+      <Top
+        isLikedPage={likedPage}
+        favorite={favorite}
+        show={show}
+        toggleShow={toggleShow}
+        ShowIcon={ShowIcon}
+      />
       <div className="flex">
-        <OtherInfo />
+        <OtherInfo isLikedPage={likedPage} />
         <div className={styles.header__center}>
           <div className={styles.header__center_left}>
             <div className={styles.header__firstItem}>Choose Params</div>
@@ -119,6 +119,7 @@ const LikedHeader = () => {
           </div>
         </div>
         <RightButtons
+          returnToChooseAll={returnToChooseAll}
           SettingIcon={SettingIcon}
           ApplyIcon={ApplyIcon}
           DeleteIcon={DeleteIcon}

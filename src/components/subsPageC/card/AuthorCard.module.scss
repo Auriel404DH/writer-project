@@ -1,8 +1,9 @@
 .author {
-  @apply w-5/12 mb-6 flex justify-between items-center text-center rounded-l-full;
+  @apply w-5/12 mb-5 flex justify-between items-center text-center rounded-l-full;
+  background-color: #28292e;
 
   &__name {
-    @apply text-slate-400 cursor-pointer hover:text-slate-600 duration-200;
+    @apply text-main3 cursor-pointer hover:text-slate-600 duration-200;
   }
 
   &__header {
@@ -14,7 +15,7 @@
   }
 
   &__tags {
-    @apply mx-1.5 rounded text-slate-400 text-xs;
+    @apply mx-1.5 rounded text-main3 text-xs;
   }
 
   &__photo {
@@ -30,6 +31,6 @@
   }
 
   &__button {
-    @apply bg-main mt-1 px-3 rounded cursor-pointer duration-200 first:mt-0 hover:bg-main2 hover:text-main;
+    @apply bg-main text-main2 mt-1 px-3 rounded cursor-pointer duration-200 first:mt-0 hover:bg-main2 hover:text-main;
   }
 }

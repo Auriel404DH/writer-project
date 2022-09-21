@@ -7,14 +7,18 @@ interface ITop {
   show: boolean;
   ShowIcon: string;
   toggleShow: () => void;
+  favorite: string;
+  isLikedPage: boolean;
 }
 
-const Top = ({ show, ShowIcon, toggleShow }: ITop) => {
+const Top = ({ show, ShowIcon, toggleShow, favorite, isLikedPage }: ITop) => {
   return (
     <div className={styles.header__top}>
       <div className={styles.header__preview}>
-        <div className={styles.header__left_item}>Favorite Post: Forest</div>
-        <Input bordered={false} placeholder="Find here..." className={styles.qwe} />
+        <div className={styles.header__left_item}>
+          Favorite {isLikedPage ? 'Work' : 'Author'}: {favorite}
+        </div>
+        <Input bordered={false} placeholder="Find here" className={styles.qwe} />
       </div>
       <div>
         <div

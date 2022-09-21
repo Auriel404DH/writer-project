@@ -6,15 +6,26 @@ interface IRightButtons {
   DeleteIcon: string;
   ApplyIcon: string;
   toggleShow: () => void;
+  returnToChooseAll: any;
 }
 
-const RightButtons = ({ SettingIcon, DeleteIcon, ApplyIcon, toggleShow }: IRightButtons) => {
+const RightButtons = ({
+  SettingIcon,
+  DeleteIcon,
+  ApplyIcon,
+  toggleShow,
+  returnToChooseAll,
+}: IRightButtons) => {
   return (
     <div className={styles.header__right}>
       <div className={styles.header__right_icon}>
         <img src={SettingIcon} alt="#" />
       </div>
-      <div className={styles.header__right_icon}>
+
+      <div onClick={returnToChooseAll} className={styles.header__right_icon}>
+        <img src={DeleteIcon} alt="#" />
+      </div>
+      <div onClick={returnToChooseAll} className={styles.header__right_icon}>
         <img src={DeleteIcon} alt="#" />
       </div>
       <div onClick={toggleShow} className={styles.header__right_icon}>

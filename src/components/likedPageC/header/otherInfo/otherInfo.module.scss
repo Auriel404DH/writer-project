@@ -4,7 +4,7 @@
   }
 
   &__item {
-    @apply text-base text-slate-100 text-center m-1 rounded hover:cursor-pointer;
+    @apply text-base text-slate-100 text-center m-0.5 rounded hover:cursor-pointer;
   }
 
   &__firstItem {
@@ -12,14 +12,14 @@
   }
 
   &__upItem {
-    @apply px-1 py-0.5 rounded-t bg-main border-b text-main2;
+    @apply rounded-t bg-main border-b text-main2;
   }
 
   &__downItem {
-    @apply px-1 py-0.5 rounded-b bg-main text-main2 hover:bg-amber-600;
+    @apply rounded-b bg-main text-main2 hover:bg-amber-600;
 
     &_active {
-      @apply px-1 py-0.5 rounded-b bg-amber-600 text-main2 hover:bg-main2 hover:text-main duration-200;
+      @apply rounded-b bg-amber-600 text-main2 hover:bg-main2 hover:text-main duration-200;
     }
   }
 }
