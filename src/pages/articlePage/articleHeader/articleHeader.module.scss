@@ -1,0 +1,42 @@
+.header {
+    text-align: center;
+    background-color: rgb(34 35 39 / var(--tw-bg-opacity));
+    margin-top: 5px;
+    padding-top: 50px;
+
+    border-radius: 20px;
+
+    &__name {
+        color: #e7a007;
+        font-size: 30px;
+    }
+
+    &__footer {
+        @apply flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 150px 30px 20px 30px;
+
+        &__date {
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        &__author {
+            font-size: 15px;
+
+            &__button {
+                border: 2px solid #e7a007;
+                padding: 10px;
+                border-radius: 10px;
+                transition: .3s;
+            }
+
+            &__button:hover {
+                background-color: #e7a007;
+                color: rgb(34 35 39) ;
+            }
+        }
+    }
+}
+

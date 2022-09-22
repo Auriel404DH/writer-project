@@ -1,13 +1,17 @@
 import React from "react";
-import styles from "articlePage.module.scss";
-
-const articlePage = () => {
+import styles from "./articlePage.module.scss";
+import ArticleHeader from "./articleHeader/articleHeader";
+import ArticleMain from "./articleMain/articleMain";
+import ArticleComments from "./articleComments/articleComments";
+const ArticlePage = () => {
     return (
-        <div>
-
+        <div className={styles.article}>
+            <ArticleHeader />
+            <ArticleMain />
+            <ArticleComments />
         </div>
     )
 }
 
-export default articlePage;
+export default ArticlePage;
 

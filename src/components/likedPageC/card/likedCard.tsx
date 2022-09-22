@@ -4,6 +4,7 @@ import stylesBG from '../../../styles/bg.module.scss';
 import cl from 'classnames';
 import { Button, Tag } from 'antd';
 import { Card } from 'antd';
+import { Link } from 'react-router-dom';
 
 const { Meta } = Card;
 
@@ -16,14 +17,14 @@ interface IPost {
 }
 
 const CardComponent: React.FC<IPost> = ({ genre, status, rating, chapters, fandom }) => {
-  const title = <div className="text-main3 text-center">Card title</div>;
+  const title = <Link to={"/articlePage"} className="text-main3 text-center">Card title</Link>;
 
   const disc = (
-    <div className="text-slate-100">
+    <Link to={"/articlePage"} className="text-slate-100">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam, provident,
       distinctio asperiores dicta, quibusdam soluta nesciunt sint alias temporibus officiis atque
       harum aspernatur? Incidunt rerum praesentium assumenda iure quas!
-    </div>
+    </Link>
   );
 
   const genreClass = cl({

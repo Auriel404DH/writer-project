@@ -1,0 +1,16 @@
+.main {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: rgb(34 35 39 / var(--tw-bg-opacity));
+
+    &__title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 15px;
+        padding: 10px 100px;
+    }
+}
