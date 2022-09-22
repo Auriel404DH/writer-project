@@ -1,0 +1,36 @@
+.author {
+  @apply w-5/12 mb-5 flex justify-between items-center text-center rounded-l-full;
+  background-color: #28292e;
+
+  &__name {
+    @apply text-main3 cursor-pointer hover:text-slate-600 duration-200;
+  }
+
+  &__header {
+    @apply mr-1 border-2 border-main rounded-full;
+  }
+
+  &__main {
+    @apply flex flex-col;
+  }
+
+  &__tags {
+    @apply mx-1.5 rounded text-main3 text-xs;
+  }
+
+  &__photo {
+    @apply w-52 object-cover;
+  }
+
+  &__description {
+    @apply mx-auto flex flex-wrap;
+  }
+
+  &__footer {
+    @apply flex flex-col mr-4;
+  }
+
+  &__button {
+    @apply bg-main text-main2 mt-1 px-3 rounded cursor-pointer duration-200 first:mt-0 hover:bg-main2 hover:text-main;
+  }
+}

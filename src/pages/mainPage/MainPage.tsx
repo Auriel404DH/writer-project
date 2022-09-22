@@ -1,12 +1,20 @@
-import Author from '../../sharedComponents/AuthorComponent/AuthorCard/AuthorCard';
+import { Author } from '../../components/subsPageC';
+import { Selector, CardComponent } from '../../components/likedPageC';
+import { MainSearch } from '../../components/mainPageC';
 import styles from './Main.module.scss';
 import 'antd/dist/antd.min.css';
-import CardComponent from '../../sharedComponents/ArticleComponent/ArticleCard/ArticleCard';
-import Selector from '../../sharedComponents/selectorComponent/selector';
-import MainSearch from './MainSearch/MainSearch';
 
 const MainPage = () => {
   const name = ['Bogdankov Nikita', 'Vadim Chetoshnikov'];
+
+  const PostData = {
+    genre: 'Angst',
+    status: 'Completed',
+    rating: 'NC-17',
+    chapters: 51,
+    fandom: 'TMNT',
+  };
+
   return (
     <div className={styles.main}>
       <div className={styles.articles}>
@@ -20,13 +28,36 @@ const MainPage = () => {
         </div>
 
         <div className={styles.block__articles}>
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
+          <CardComponent
+            genre={PostData.genre}
+            status={PostData.status}
+            rating={PostData.rating}
+            chapters={PostData.chapters}
+            fandom={PostData.fandom}
+          />
+          <CardComponent
+            genre={PostData.genre}
+            status={PostData.status}
+            rating={PostData.rating}
+            chapters={PostData.chapters}
+            fandom={PostData.fandom}
+          />
+          <CardComponent
+            genre={PostData.genre}
+            status={PostData.status}
+            rating={PostData.rating}
+            chapters={PostData.chapters}
+            fandom={PostData.fandom}
+          />
+          <CardComponent
+            genre={PostData.genre}
+            status={PostData.status}
+            rating={PostData.rating}
+            chapters={PostData.chapters}
+            fandom={PostData.fandom}
+          />
         </div>
         <MainSearch />
-
       </div>
 
       <div className={styles.authors}>

@@ -9,7 +9,12 @@
   }
 
   &__sidebar {
-    @apply fixed right-0;
+    @apply fixed duration-300;
+    right: -15%;
+
+    &_open {
+      @apply fixed right-0 duration-300;
+    }
   }
 
   &__info {

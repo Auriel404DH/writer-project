@@ -1,0 +1,45 @@
+.header {
+  &__left {
+    &_item {
+      @apply text-base text-main2 bg-main px-2 m-1 py-0.5 rounded hover:text-main hover:bg-main2 hover:cursor-pointer duration-200 whitespace-nowrap;
+    }
+  }
+
+  &__right {
+    &_icon {
+      @apply m-2 mt-1.5 w-fit mx-auto bg-main rounded-lg hover:bg-amber-600 duration-200;
+    }
+  }
+
+  &__rotate {
+    @apply rotate-180 text-gray-800;
+  }
+
+  &__preview {
+    @apply w-10/12 flex items-center ml-5 justify-around duration-200;
+  }
+
+  &__top {
+    @apply flex pb-1 justify-between ml-4 text-main3;
+
+    padding-right: 22.5px;
+  }
+}
+
+.qwe {
+  background-color: #28292e;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+  width: 650px;
+  border-radius: 4px;
+  margin: 0 0 0 33px;
+  padding: 6px 0 6px 10px;
+  transition: none;
+}
+
+.qwe:hover {
+  background-color: #28292e;
+}
+
+.qwe:focus {
+  background-color: #28292e;
+}

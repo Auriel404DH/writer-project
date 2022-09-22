@@ -1,0 +1,19 @@
+.author {
+  @apply pl-3 flex items-center mb-2 justify-start;
+
+  &__name {
+    @apply text-slate-400 cursor-pointer hover:text-slate-600 duration-200;
+  }
+
+  &__header {
+    @apply border-2 border-main rounded-full;
+  }
+
+  &__main {
+    @apply flex flex-col pt-1.5 ml-3;
+  }
+
+  &__photo {
+    @apply w-16 object-cover;
+  }
+}

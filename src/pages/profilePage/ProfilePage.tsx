@@ -1,17 +1,37 @@
 import React from 'react';
 import styles from './ProfilePage.module.scss';
-import ProfileSidebar from './ProfileSidebar/ProfileSidebar';
-import ProfileFace from './ProfileFace/ProfileFace';
-import ProfileMenu from './ProfileMenu/ProfileMenu';
-import ProfileAchieves from './ProfileAchieves/ProfileAchieves';
-import ProfilePost from './ProfilePost/ProfilePost';
+import {
+  ProfileAchieves,
+  ProfileSidebar,
+  ProfileMenu,
+  ProfileUser,
+  ProfilePost,
+} from '../../components/profilePageC';
 
 const Profile: React.FC = () => {
+  const [sideBarClassName, setSideBarClassName] = React.useState(styles.profile__sidebar);
+  const sideBarRef = React.useRef<any>(null);
+
+  const handleScroll = () => {
+    const heightToTop = sideBarRef.current?.getBoundingClientRect().top;
+
+    if (heightToTop < 75) {
+      setSideBarClassName(styles.profile__sidebar_open);
+    } else if (heightToTop > 75) {
+      setSideBarClassName(styles.profile__sidebar);
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className={styles.profile}>
       <div className={styles.profile__title}>Your profile</div>
 
-      <div className={styles.profile__sidebar}>
+      <div className={sideBarClassName}>
         <ProfileSidebar />
       </div>
 
@@ -20,14 +40,14 @@ const Profile: React.FC = () => {
           <ProfileMenu />
         </div>
         <div className={styles.profile__info_item}>
-          <ProfileFace />
+          <ProfileUser />
         </div>
         <div className={styles.profile__info_item}>
           <ProfileAchieves />
         </div>
       </div>
 
-      <div className={styles.profile__bottom}>
+      <div ref={sideBarRef} className={styles.profile__bottom}>
         <ProfilePost />
         <ProfilePost />
         <ProfilePost />

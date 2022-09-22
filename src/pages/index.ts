@@ -1,7 +1,7 @@
-import MainPage from './mainPage/MainPage';
-import ProfilePage from './profilePage/ProfilePage';
-import LikedPage from './likedPage/LikedPage';
-import SubscriptionPage from './subscriptionPage/SubscriptionPage';
-import EditorPage from './editorPage/EditorPage';
+import MainPage from './mainPage/mainPage';
+import ProfilePage from './profilePage/profilePage';
+import LikedPage from './likedPage/likedPage';
+import SubscriptionPage from './subsPage/subsPage';
+import EditorPage from './editorPage/editorPage';
 
 export { MainPage, ProfilePage, LikedPage, SubscriptionPage, EditorPage };

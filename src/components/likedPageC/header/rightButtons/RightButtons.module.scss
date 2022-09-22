@@ -1,0 +1,9 @@
+.header {
+  &__right {
+    @apply w-1/12 flex justify-between flex-col my-1;
+
+    &_icon {
+      @apply m-2 w-fit mx-auto bg-main rounded-lg hover:bg-amber-600 duration-200;
+    }
+  }
+}
