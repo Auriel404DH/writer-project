@@ -7,3 +7,12 @@
     }
   }
 }
+
+@media (max-width: 1380px) {
+  .header {
+    &__right {
+      justify-content: start;
+      margin-right: 10px;
+    }
+  }
+}

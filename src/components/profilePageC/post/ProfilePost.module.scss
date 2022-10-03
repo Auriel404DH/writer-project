@@ -1,24 +1,43 @@
 .Post {
   @apply flex items-center;
+  @media (max-width: 825px) {
+    flex-direction: column-reverse;
+    align-items: none;
+  }
 
   &__left {
     @apply w-1/6;
-
+    @media (max-width: 825px) {
+      display: flex;
+      width: 100%;
+    }
     &_theme {
       @apply my-1.5 flex justify-between px-2 py-1 mx-2 rounded bg-main2;
     }
 
     &_key {
       @apply text-main3;
+      @media (max-width: 456px) {
+        font-size: 8px;
+      }
     }
 
     &_value {
       @apply text-main;
+      @media (max-width: 825px) {
+        padding: 0 0 0 10px;
+      }
+      @media (max-width: 456px) {
+        font-size: 8px;
+      }
     }
   }
 
   &__right {
     @apply w-10/12 h-44 overflow-hidden overflow-ellipsis flex bg-main2 my-2 justify-between ml-auto rounded;
+    @media (max-width: 825px) {
+      width: 100%;
+    }
 
     &_img {
       @apply w-3/12 ml-2 flex items-center;
@@ -46,6 +65,11 @@
 
     &_tag {
       @apply px-2 bg-main rounded text-slate-900 font-medium;
+    }
+  }
+  &__description {
+    @media (max-width: 510px) {
+      font-size: 10px;
     }
   }
 }

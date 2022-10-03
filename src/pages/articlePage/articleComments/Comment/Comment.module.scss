@@ -3,6 +3,9 @@
     margin: 0 auto;
     margin-top: 20px;
     width: 80%;
+    @media (max-width: 600px) {
+        width: 90%;
+    }
     &__header {
         @apply flex;
         flex-direction: row;
@@ -10,6 +13,9 @@
 
     &__text {
         margin-top: 20px;
+        @media (max-width: 600px) {
+            font-size: 12px;
+        } 
     }
 }
 
@@ -17,6 +23,10 @@
     margin-top: 10px;
     margin-left: 20px;
     font-size: 20px;
+    @media (max-width: 600px) {
+        margin-top: 15px;
+        font-size: 15px;
+    }
 }
 
 .image {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Acheves from './acheves/Acheves';
+import Achieves from './achieves/Achieves';
 import Tags from './tags/Tags';
 import picka from '../../../assets/footerLogo.png';
 import styles from './ProfilePost.module.scss';
@@ -7,7 +7,7 @@ import { Typography } from 'antd';
 const { Title } = Typography;
 
 const ProfilePost: React.FC = () => {
-  const PostAcheves = ['qwe', 'qwe2', 'qwe3'];
+  const PostAchieves = ['qwe', 'qwe2', 'qwe3'];
 
   const TagsData = {
     genre: 'Fantasy',
@@ -46,11 +46,11 @@ const ProfilePost: React.FC = () => {
           <Title level={4}>
             <div className={styles.Post__right_title}>Soul's Life</div>
           </Title>
-          <div>
+          <div className={styles.Post__description}>
             Description Description Description Description Description Description Description
             Description Description
           </div>
-          <Acheves postAcheves={PostAcheves} />
+          <Achieves postAchieves={PostAchieves} />
         </div>
         <Tags
           genre={TagsData.genre}

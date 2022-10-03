@@ -4,16 +4,20 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 20px;
 
     &__title {
+        @apply text-main3;
         font-size: 25px;
     }
 
     &__choose {
+        margin-top: 40px;
         @apply flex;
         justify-content: space-between;
 
         &__text {
+            @apply text-main3;
             font-size: 25px;
         }
 
@@ -29,7 +33,55 @@
         }
 
         &__button:hover {
-            border-color: #fff;
+            border-color: rgb(148 163 184 / var(--tw-text-opacity));
+        }
+    }
+}
+
+
+@media (max-width: 1279px) {
+    .language {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__choose {
+            &__text {
+                font-size: 15px;
+            }
+            &__button {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 911px) {
+    .language {
+        &__choose {
+            &__button {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .language {
+        &__choose {
+            &__button {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .language {
+        &__choose {
+            &__text {
+                font-size: 12px;
+            }
         }
     }
 }

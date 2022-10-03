@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './ProfileMenu.module.scss';
 
 const ProfileMenu = () => {
@@ -6,43 +7,45 @@ const ProfileMenu = () => {
     <>
       <div className={styles.menu}>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Works</div>
-          <div className={styles.menu__item_value}>1</div>
+          <div className={styles.menu__item__key}>Works</div>
+          <div className={styles.menu__item__value}>1</div>
         </div>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Readed</div>
-          <div className={styles.menu__item_value}>116</div>
+          <div className={styles.menu__item__key}>Readed</div>
+          <div className={styles.menu__item__value}>116</div>
         </div>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Liked</div>
-          <div className={styles.menu__item_value}>42</div>
+          <div className={styles.menu__item__key}>Liked</div>
+          <div className={styles.menu__item__value}>42</div>
         </div>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Subs</div>
-          <div className={styles.menu__item_value}>12</div>
+          <div className={styles.menu__item__key}>Subs</div>
+          <div className={styles.menu__item__value}>12</div>
         </div>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Reviews</div>
-          <div className={styles.menu__item_value}>3</div>
+          <div className={styles.menu__item__key}>Reviews</div>
+          <div className={styles.menu__item__value}>3</div>
         </div>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Book marks</div>
-          <div className={styles.menu__item_value}>84</div>
+          <div className={styles.menu__item__key}>Book marks</div>
+          <div className={styles.menu__item__value}>84</div>
         </div>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Guests</div>
-          <div className={styles.menu__item_value}>8</div>
+          <div className={styles.menu__item__key}>Guests</div>
+          <div className={styles.menu__item__value}>8</div>
         </div>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Achievements</div>
-          <div className={styles.menu__item_value}>0</div>
+          <div className={styles.menu__item__key}>Achievements</div>
+          <div className={styles.menu__item__value}>0</div>
         </div>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Settings</div>
+          <div>
+            <Link className={styles.menu__item__key} to="/Profile/Settings">Settings</Link>
+          </div>
         </div>
         <div className={styles.menu__item}>
-          <div className={styles.menu__item_key}>Customization</div>
-          <div className={styles.menu__item_value}>№593</div>
+          <div className={styles.menu__item__key}>Customization</div>
+          <div className={styles.menu__item__value}>№593</div>
         </div>
       </div>
     </>

@@ -2,11 +2,14 @@
   &__right {
     @apply w-10/12 h-44 overflow-hidden overflow-ellipsis flex bg-main2 my-2 justify-between ml-auto rounded;
 
-    &_acheve {
+    &_achieve {
       @apply mx-2;
+      @media (max-width: 510px) {
+        font-size: 10px;
+      }
     }
 
-    &_acheves {
+    &_achieves {
       @apply flex mt-2 py-2 w-11/12;
     }
   }

@@ -15,7 +15,10 @@ const Author: React.FC<IAuthorCard> = ({ name, sub }) => {
   return (
     <div className={styles.author}>
       <div className={styles.author__header}>
-        <Avatar size={100} src={authorPhoto} icon={<UserOutlined />} />
+        <Avatar className={styles.photo} size={100} src={authorPhoto} icon={<UserOutlined />} />
+      </div>
+      <div className={styles.author__header__hidden}>
+        <Avatar className={styles.photo} size={67} src={authorPhoto} icon={<UserOutlined />} />
       </div>
       <div className={styles.author__main}>
         <Title level={3}>

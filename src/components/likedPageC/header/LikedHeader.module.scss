@@ -22,14 +22,6 @@
     }
   }
 
-  &__right {
-    @apply w-1/12 flex justify-around flex-col mt-1;
-
-    &_icon {
-      @apply m-2 w-fit mx-auto bg-main rounded-lg hover:bg-amber-600 duration-200;
-    }
-  }
-
   &__firstItem {
     @apply text-lg mb-2 text-main3;
   }
@@ -54,4 +46,19 @@
 
 .opacityZero {
   @apply opacity-0 duration-200;
+}
+
+@media (max-width: 1380px) {
+  .header {
+    max-height: 40rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    &__firstItem {
+      font-size: 15px;
+      line-height: 1.2;
+    }
+  }
 }

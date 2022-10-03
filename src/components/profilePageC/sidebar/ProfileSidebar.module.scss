@@ -1,5 +1,8 @@
 .sidebar {
   @apply text-center w-fit bg-main2 p-3 flex flex-col rounded-l;
+  @media (max-width: 1050px) {
+    display: none;
+  }
 
   &__menu {
     @apply mb-2 pb-1 border-b text-main3 border-main3;

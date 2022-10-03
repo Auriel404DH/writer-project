@@ -17,7 +17,7 @@ const Tags: React.FC<ITags> = ({ genre, status, rating, chapters, Fandom }) => {
     [stylesBG.Bg__darkRed]: genre === 'Novel',
     [stylesBG.Bg__AnotherRed]: genre === 'Romance',
     [stylesBG.Bg__gray]: genre === 'Detective',
-    [stylesBG.Bg__purple]: genre === 'Mistic',
+    [stylesBG.Bg__purple]: genre === 'Mystic',
     [stylesBG.Bg__yellow]: genre === 'Historical',
     [stylesBG.Bg__lime]: genre === 'Adventure',
     [stylesBG.Bg__pink]: genre === 'Humor',
@@ -32,7 +32,7 @@ const Tags: React.FC<ITags> = ({ genre, status, rating, chapters, Fandom }) => {
     [stylesBG.Bg__green]: status === 'Completed',
     [stylesBG.Bg__yellow]: status === 'In process',
     [stylesBG.Bg__AnotherCyan]: status === 'Abandoned',
-    [stylesBG.Bg__red]: status === 'Сanceled',
+    [stylesBG.Bg__red]: status === 'Canceled',
   });
 
   const chapterClass = cl({

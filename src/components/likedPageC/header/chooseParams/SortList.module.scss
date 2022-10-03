@@ -1,11 +1,14 @@
 .sortList {
   @apply flex justify-center items-center mb-5;
+  @media (max-width: 470px) {
+    margin-bottom: 2px;
+  }
 
   &__content {
     @apply flex flex-wrap justify-center;
   }
 }
 
-.choosed {
+.chosen {
   @apply hidden;
 }

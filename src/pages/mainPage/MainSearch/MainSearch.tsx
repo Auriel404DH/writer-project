@@ -1,4 +1,3 @@
-import React from "react";
 import styles from './MainSearch.module.scss';
 const MainSearch = () => {
     return (

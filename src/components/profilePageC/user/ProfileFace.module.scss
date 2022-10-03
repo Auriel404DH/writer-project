@@ -7,13 +7,63 @@
 
   &__content {
     @apply flex justify-between my-2 px-3;
+    @media (max-width: 530px) {
+      display: none;
+    }
   }
 
   &__key {
     @apply text-main3;
+    @media (max-width: 630px) {
+      font-size: 12px;
+    }
   }
 
   &__value {
     @apply text-main inline;
+    @media (max-width: 630px) {
+      font-size: 12px;
+    }
+  }
+
+  &__name {
+    font-size: 25px;
+    @media (max-width: 810px) {
+      font-size: 20px;
+    }
+    @media (max-width: 630px) {
+      font-size: 15px;
+    }
+  }
+
+  &__information {
+    margin: 0 auto;
+  }
+
+  &__new {
+    display: none;
+    @media (max-width: 530px) {
+      display: flex;
+    }
+  }
+
+  &__element {
+    margin: 0 20px;
+    @media (max-width: 410px) {
+      margin: 0 10px;
+    }
+  }
+}
+
+.flex {
+  @media (max-width: 530px) {
+    display: flex;
+    :nth-child(0) {
+      order: 1;
+    }
+    :nth-child(1) {
+      order: 0;
+    }
+    margin-left: 10px;
   }
 }

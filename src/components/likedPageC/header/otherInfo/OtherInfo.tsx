@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './otherInfo.module.scss';
+import styles from './OtherInfo.module.scss';
 
 interface IOtherInfo {
   isLikedPage: boolean;
@@ -9,7 +9,7 @@ const OtherInfo = ({ isLikedPage }: IOtherInfo) => {
   return (
     <div className={styles.header__left}>
       <div className={styles.header__firstItem}>Other Information</div>
-      <div className="grid grid-cols-2">
+      <div className={styles.header__block}>
         <div className={styles.header__item}>
           <div className={styles.header__upItem}>Authors</div>
           <div className={styles.header__downItem}>24</div>

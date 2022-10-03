@@ -1,15 +1,38 @@
 .menu {
   @apply grid grid-cols-2 gap-3 text-center;
-
+  @media (max-width: 530px) {
+    @apply grid-cols-5;
+    margin: 10px 15px;
+  }
+  @media (max-width: 460px) {
+    @apply grid-cols-4;
+  }
   &__item {
     @apply bg-main2 rounded-md py-1 flex flex-col justify-center;
 
-    &_key {
+    &__key {
       @apply text-main3;
+      transition: .3s;
+      @media (max-width: 630px) {
+        font-size: 12px;
+      }
+      @media (max-width: 530px) {
+        font-size: 10px;
+      }
     }
 
-    &_value {
+    &__key:hover {
+      color: white;
+    }
+
+    &__value {
       @apply text-main inline;
+      @media (max-width: 630px) {
+        font-size: 12px;
+      }
+      @media (max-width: 530px) {
+        font-size: 10px;
+      }
     }
   }
 }

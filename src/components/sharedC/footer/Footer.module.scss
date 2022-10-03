@@ -8,6 +8,9 @@ footer {
 
     &__column {
       @apply text-center;
+      &__navigate {
+        @apply text-center;
+      }
     }
 
     &__left {
@@ -16,6 +19,9 @@ footer {
 
     &__center {
       @apply w-2/6 flex flex-col;
+      &__image {
+        @apply mx-auto mb-2;
+      }
     }
 
     &__right {
@@ -50,9 +56,24 @@ footer {
     &__icon:hover {
       transform: translateY(-2px);
     }
-  }
 
-  .footerDown {
-    @apply border-t-2 border-slate-500 pt-2 mx-auto w-fit;
+    &__down {
+      @apply border-t-2 border-slate-500 pt-2 mx-auto w-fit;
+    }
+  }
+}
+
+.image {
+  @apply w-24;
+}
+
+@media (max-width: 530px) {
+  .footer {
+    &__column__navigate {
+      display: none;
+    }
+    &__down {
+      font-size: 10px;
+    }
   }
 }

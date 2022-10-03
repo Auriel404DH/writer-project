@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
               <li className={styles.footer__link}>FAQ</li>
             </ul>
           </nav>
-          <nav className={styles.footer__column}>
+          <nav className={styles.footer__column__navigate}>
             <p className={styles.footer__title}>Navigate</p>
             <ul>
               <li className={styles.footer__link__mb}>
@@ -49,10 +49,10 @@ const Footer: React.FC = () => {
           </nav>
         </div>
         <div className={styles.footer__center}>
-          <div className="mx-auto mb-2 ">
-            <img className="w-24" src={logoFoot} alt="#" />
+          <div className={styles.footer__center__image}>
+            <img className={styles.image} src={logoFoot} alt="#" />
           </div>
-          <div className={styles.footerDown}>Copyright © 2022 B&K Labs Inc. Trademark Policy</div>
+          <div className={styles.footer__down}>Copyright © 2022 B&K Labs Inc. Trademark Policy</div>
         </div>
         <div className={styles.footer__right}>
           <nav className={styles.footer__column}>

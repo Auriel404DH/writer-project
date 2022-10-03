@@ -30,14 +30,14 @@ const LikerHeaderSort: React.FC<ILikerHeaderSort> = ({
               onClick={() => onClickParam(i)}
               className={cl({
                 [stylesContent(i)]: true,
-                [styles.choosed]: acceptedParams.includes(i),
+                [styles.chosen]: acceptedParams.includes(i),
               })}
             >
               {i}
             </div>
           ))
         ) : (
-          <div>That is all :-&</div>
+          <div>That's all</div>
         )}
       </div>
     </div>

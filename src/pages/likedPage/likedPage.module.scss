@@ -5,6 +5,20 @@
 .title {
   @apply text-slate-200 flex mt-6 mb-4 pb-2 justify-center border-b-2 border-main w-7/12 mx-auto text-3xl;
   color: #e7a007;
+  @media (max-width: 830px) {
+    font-size: 25px;
+  }
 }
 
+@media (max-width: 1000px) {
+  .liked__articles {
+    @apply grid-cols-2;
+  }
+}
+
+@media (max-width: 700px) {
+  .liked__articles {
+    @apply grid-cols-1;
+  }
+}
 

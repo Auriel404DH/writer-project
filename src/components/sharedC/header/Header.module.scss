@@ -8,7 +8,6 @@
       @apply px-6 py-1 text-main opacity-70 text-base transition-colors hover:opacity-100;
     }
   }
-
   .logo {
     @apply ml-4;
 
@@ -16,4 +15,30 @@
       @apply w-16;
     }
   }
+}
+
+@media (max-width: 680px) {
+  .header {
+    .nava {
+      .link {
+        font-size: 12px;
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger__menu {
+    display: block;
+  }
+  .header {
+    .nava {
+      .link {
+        font-size: 10px;
+        padding: 0 5px;
+      }
+    }
+  }
+
 }

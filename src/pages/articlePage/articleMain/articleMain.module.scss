@@ -3,7 +3,9 @@
     margin: 0 auto;
     padding-top: 20px;
     background-color: rgb(34 35 39 / var(--tw-bg-opacity));
-
+    @media (max-width: 970px) {
+        width: 90%;
+    }
     &__title {
         font-size: 20px;
         text-align: center;
@@ -12,5 +14,9 @@
     &__text {
         font-size: 15px;
         padding: 10px 100px;
+        @media (max-width: 600px) {
+            padding: 10px 30px;
+            font-size: 12px;
+        }
     }
 }

@@ -1,15 +1,21 @@
 .Achieves {
   @apply bg-main2 pl-3 pb-4 rounded;
+  padding: 10px 8px;
+  margin: 0 15px;
 
   &__text {
     @apply text-center w-11/12 py-2 text-main3;
   }
 
   &__AchieveContainer {
-    @apply flex flex-wrap  justify-start;
+    @apply grid grid-cols-3;
+    @media (max-width: 530px) {
+      @apply grid-cols-5;
+    }
   }
 
   &__achieve {
-    @apply h-fit w-20 m-1;
+    @apply h-fit m-1;
+    width: 100%;
   }
 }
